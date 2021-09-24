@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+  anio: number = new Date().getFullYear();
+  saludo: string = "Saludos";
   constructor() { }
 
   ngOnInit(): void {

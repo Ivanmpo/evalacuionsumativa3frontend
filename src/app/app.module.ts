@@ -6,8 +6,11 @@ import { HeaderComponent } from './compartida/header/header.component';
 import { LoginComponent } from './login/login/login.component';
 import { NavbarComponent } from './compartida/navbar/navbar.component';
 import { FooterComponent } from './compartida/footer/footer.component';
-import { ProductosComponent } from './productos/productos/productos.component';
+import { ProductoComponent } from './producto/producto/producto.component';
 import { RegistrarComponent } from './login/registrar/registrar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { CategoriaComponent } from './categoria/categoria/categoria.component';
+import { PagenotfoundComponent } from './compartida/pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { RegistrarComponent } from './login/registrar/registrar.component';
     LoginComponent,
     NavbarComponent,
     FooterComponent,
-    ProductosComponent,
-    RegistrarComponent
+    ProductoComponent,
+    RegistrarComponent,
+    CategoriaComponent,
+    PagenotfoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
