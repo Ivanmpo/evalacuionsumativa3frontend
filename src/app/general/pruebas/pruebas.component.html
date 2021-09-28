@@ -1,0 +1,70 @@
+<p>pruebas works!</p>
+<button type="button" (click)="obtenerDia()" class="btn btn-primary">Obtener Día</button>
+<p>Fecha hoy : {{Fecha2}}</p>
+<p> Fecha hoy : {{Fecha | date:'yyyy-MM-dd'}}</p>
+<p>Fecha hoy : {{Fecha1}}</p>
+
+<button type="button" (click)="sumar()" class="btn btn-primary">Sumar uno</button>
+<h3>{{contador}}</h3>
+
+<button type="button" (click)="restar()" class="btn btn-primary">Restar uno</button>
+
+<hr class="mb-5">
+
+<div class="row justify-content-md-center">
+    <div class="col-4">
+        <input type="text" [(ngModel)]="DiaNuevo" class="form-control" placeholder="Agregar día">
+        <button type="button" (click)="agregarDia()" class="btn btn-primary">Agregar día</button>
+    </div>
+</div>
+
+<hr class="mb-5">
+
+<div class="row justify-content-md-center">
+    <div class="col-4">
+        <input type="text" class="form-control" placeholder="Agregar día" #unnuevodia>
+        <button type="button" (click)="agregarDia2(unnuevodia.value)" class="btn btn-primary">Agregar día 2</button>
+    </div>
+</div>
+<hr>
+<!-- ngFor -->
+<ul>
+    <li *ngFor="let dia of dias_semana; let i = index">
+        <b *ngIf="getDiaNumber == i ; else templateName">{{dia}}</b>
+        <ng-template #templateName>
+            {{dia}}
+        </ng-template>
+    </li>
+</ul>
+
+
+<hr>
+<hr>
+
+
+
+<button type="button" (click)="eliminar()" class="btn btn-primary">Eliminar día</button>
+
+<hr>
+<hr>
+
+
+
+<form (ngSubmit)="insertar()">
+    <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input [(ngModel)]="email" type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input [(ngModel)]="password" type="password" class="form-control" id="password" name="password">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<form (ngSubmit)="insertar2($event)">
+
+    <button type="submit" class="btn btn-primary">Submit 2</button>
+</form>

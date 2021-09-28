@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
+ 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './compartida/header/header.component';
 import { LoginComponent } from './login/login/login.component';
@@ -11,6 +13,7 @@ import { RegistrarComponent } from './login/registrar/registrar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CategoriaComponent } from './categoria/categoria/categoria.component';
 import { PagenotfoundComponent } from './compartida/pagenotfound/pagenotfound.component';
+import { PruebasComponent } from './general/pruebas/pruebas.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,14 @@ import { PagenotfoundComponent } from './compartida/pagenotfound/pagenotfound.co
     ProductoComponent,
     RegistrarComponent,
     CategoriaComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    PruebasComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
