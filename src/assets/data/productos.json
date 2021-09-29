@@ -2,33 +2,43 @@
   "productos": [
     {
       "id": 1,
-      "nombre": "Pera",
-      "descripcion": "El rincon de Soto",
-      "precio": "12.34"
+      "nombre": "Dark side of the moon",
+      "descripcion": "Album de Pink floyd",
+      "precio": "9990",
+      "cantidad" : "3",
+      "img": "dsotm.jpg"
     },
     {
       "id": 2,
-      "nombre": "Kiwi",
-      "descripcion": "Zespri",
-      "precio": "2.34"
+      "nombre": "Animals",
+      "descripcion": "Disco de Pink Floyd",
+      "precio": "8000",
+      "cantidad" : "15",
+      "img": "animals.jpg"
     },
     {
       "id": 3,
-      "nombre": "Manzana",
-      "descripcion": "Verde",
-      "precio": "7"
+      "nombre": "Fear Inoculum",
+      "descripcion": "Último disco de Tool",
+      "precio": "13000",
+      "cantidad" : "12",
+      "img": "fearinoculum.jpg"
     },
     {
       "id": 4,
-      "nombre": "Chirimoya",
-      "descripcion": "No alegre",
-      "precio": "12.0"
+      "nombre": "10000 Days",
+      "descripcion": "Versión Premium",
+      "precio": "12000",
+      "cantidad" : "4",
+      "img": "tool10000days.jpg"
     },
     {
       "id": 5,
-      "nombre": "Melocotones",
-      "descripcion": "Natur",
-      "precio": "3.55"
+      "nombre": "Blackstar",
+      "descripcion": "Último disco de David Bowie",
+      "precio": "9000",
+      "cantidad" : "4",
+      "img": "blackstar.jpg"
     }
   ]
 }
