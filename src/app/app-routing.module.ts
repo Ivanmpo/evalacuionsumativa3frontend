@@ -5,13 +5,15 @@ import { LoginComponent } from './login/login/login.component';
 import { CategoriaComponent } from './categoria/categoria/categoria.component';
 import { PagenotfoundComponent} from './compartida/pagenotfound/pagenotfound.component';
 import { RegistrarComponent } from './login/registrar/registrar.component';
+import { PagoComponent } from './pago/pago.component';
 
 // REferencias a los componentes 
 const app_routes : Routes = [
-    { path:'' , component: ProductoComponent  },
-    { path:'login' , component: LoginComponent },
+    { path:'' , component: LoginComponent },
+    { path:'productos' , component: ProductoComponent  },
     { path:'registrar' , component: RegistrarComponent },
     { path:'categoria' , component: CategoriaComponent },
+    { path:'pago' , component: PagoComponent },
     { path: '**', component: PagenotfoundComponent },
 ];
 

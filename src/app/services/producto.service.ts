@@ -7,7 +7,7 @@ import { ListaProductos, Producto } from '../interfaces/producto.interface';
 })
 export class ProductoService {
 
-  listaProductos: ListaProductos[] = [];
+  carrito: Producto[] = [];
   lista_productos: Producto[] = [];
   producto: Producto = {};
   constructor(private http: HttpClient) {
@@ -24,4 +24,7 @@ export class ProductoService {
     });
   }
 
+  public setCarrito(carrito: Producto[]): void{
+    this.carrito = carrito;
+  }
 }

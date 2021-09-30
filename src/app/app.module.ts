@@ -14,19 +14,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { CategoriaComponent } from './categoria/categoria/categoria.component';
 import { PagenotfoundComponent } from './compartida/pagenotfound/pagenotfound.component';
 import { GeneralModule } from './general/general.module';
+import { PagoModule } from './pago/pago.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    //LoginComponent,
     NavbarComponent,
     FooterComponent,
     ProductoComponent,
-    //RegistrarComponent,
     CategoriaComponent,
     PagenotfoundComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -34,7 +34,8 @@ import { GeneralModule } from './general/general.module';
     FormsModule,
     HttpClientModule,
     LoginModule,
-    GeneralModule
+    GeneralModule,
+    PagoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

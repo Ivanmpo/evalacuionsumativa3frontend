@@ -1,0 +1,64 @@
+<h3>¿A dónde desea recibir su pedido?</h3>
+<form (ngSubmit)="generarPago()">
+    <div class="mb-3">
+        <label for="pais" class="form-label">País</label>
+        <input type="text" [(ngModel)]="elpago.pais" class="form-control" name="pais" id="pais" aria-describedby="emailHelp">
+        <div class="form-text">{{paisMensaje}}</div>
+    </div>
+    <div class="mb-3">
+        <label for="calle" class="form-label">Calle</label>
+        <input type="text" [(ngModel)]="elpago.calle" class="form-control" name="calle" id="calle" aria-describedby="emailHelp">
+        <div  class="form-text">{{  calleMensaje }}</div>
+    </div>
+    <div class="mb-3">
+        <label for="ciudad" class="form-label">Ciudad</label>
+        <input type="text" [(ngModel)]="elpago.ciudad" class="form-control" name="ciudad" id="ciudad" aria-describedby="emailHelp">
+        <div  class="form-text">{{ ciudadMensaje  }}</div>
+    </div>
+    <div class="mb-3">
+        <label for="region" class="form-label">Región</label>
+        <input type="text" [(ngModel)]="elpago.region" class="form-control" name="region" id="region" aria-describedby="emailHelp">
+        <div class="form-text">{{  regionMensaje }}</div>
+    </div>
+    <div class="mb-3">
+        <label for="codigopostal" class="form-label">Código Postal</label>
+        <input type="number"[(ngModel)]="elpago.codigopostal"  class="form-control" name="codigopostal" id="codigopostal" aria-describedby="emailHelp">
+        <div class="form-text">{{  codigopostalMensaje }}</div>
+    </div>
+
+<h3>Ingrese sus datos de Pago</h3>
+
+    <div class="mb-3">
+        <label for="tipo_tarjeta" class="form-label">Tipo de Tarjeta</label>
+        <input type="text" [(ngModel)]="tipoPago.tipo_tarjeta" class="form-control" name="tipo_tarjeta" id="tipo_tarjeta" aria-describedby="emailHelp">
+        <div class="form-text">{{tipotarjetaMensaje}}</div>
+    </div>
+    <div class="mb-3">
+        <label for="nombre_cliente" class="form-label">Nombre del Cliente</label>
+        <input type="text" [(ngModel)]="tipoPago.nombre_cliente" class="form-control" name="nombre_cliente" id="nombre_cliente" aria-describedby="emailHelp">
+        <div class="form-text">{{nombre_clienteMensaje}}</div>
+    </div>
+    <div class="mb-3">
+        <label for="numero_tarjeta" class="form-label">Número de Tarjeta</label>
+        <input type="text" [(ngModel)]="tipoPago.numero_tarjeta" class="form-control" name="numero_tarjeta" id="numero_tarjeta" aria-describedby="emailHelp">
+        <div class="form-text">{{numero_tarjetaMensaje}}</div>
+    </div>
+    <div class="mb-3">
+        <label for="codigo_seguridad" class="form-label">Código de Seguridad</label>
+        <input type="text" [(ngModel)]="tipoPago.codigo_seguridad" class="form-control" name="codigo_seguridad" id="codigo_seguridad"
+            aria-describedby="emailHelp">
+        <div class="form-text">{{codigo_seguridadMensaje}}</div>
+    </div>
+    <div class="mb-3">
+        <label for="mes_expiracion" class="form-label">Mes de Expiración</label>
+        <input type="text" [(ngModel)]="tipoPago.mes_expiracion" class="form-control" name="mes_expiracion" id="mes_expiracion" aria-describedby="emailHelp">
+        <div class="form-text">{{mes_expiracionMensaje}}</div>
+    </div>
+    <div class="mb-3">
+        <label for="anho_expiracion" class="form-label">Año de expiración</label>
+        <input type="text" [(ngModel)]="tipoPago.anho_expiracion" class="form-control" name="anho_expiracion" id="anho_expiracion"
+            aria-describedby="emailHelp">
+        <div class="form-text">{{anho_expiracionMensaje}}</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Verificar Pago</button>
+</form>

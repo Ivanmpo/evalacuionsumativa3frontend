@@ -50,6 +50,8 @@ export class ProductoComponent implements OnInit {
         }
       }
     });
+
+    this.productoService.setCarrito(this.carrito);
   }
 
   eliminarProductoDeCarrito(indice: number, id_producto: number|undefined): void {
