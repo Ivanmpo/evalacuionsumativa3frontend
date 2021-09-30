@@ -27,6 +27,10 @@ export class PruebasComponent implements OnInit {
   email: string|null = null ;
   password : string|null = "";
 
+  //valores a modal hijo
+  TituloModal: string = "Soy el título";
+
+
   constructor() {
     console.log("Constructor Pruebas");
   }
@@ -85,6 +89,10 @@ export class PruebasComponent implements OnInit {
     console.log("Metodo insertar 2...");
     event.preventDefault();
     console.log(event);
+  }
+
+  capturarVariable(mensaje: any): void {
+    console.log("capturarVariable...", mensaje);
   }
 
 

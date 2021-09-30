@@ -4,11 +4,13 @@ import { ProductoComponent } from './producto/producto/producto.component';
 import { LoginComponent } from './login/login/login.component';
 import { CategoriaComponent } from './categoria/categoria/categoria.component';
 import { PagenotfoundComponent} from './compartida/pagenotfound/pagenotfound.component';
+import { RegistrarComponent } from './login/registrar/registrar.component';
 
 // REferencias a los componentes 
 const app_routes : Routes = [
     { path:'' , component: ProductoComponent  },
     { path:'login' , component: LoginComponent },
+    { path:'registrar' , component: RegistrarComponent },
     { path:'categoria' , component: CategoriaComponent },
     { path: '**', component: PagenotfoundComponent },
 ];

@@ -68,3 +68,13 @@
 
     <button type="submit" class="btn btn-primary">Submit 2</button>
 </form>
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+<app-modal [titulo]="TituloModal" (propagar)="capturarVariable($event)"></app-modal>
+
